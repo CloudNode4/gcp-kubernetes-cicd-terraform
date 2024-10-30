@@ -30,6 +30,9 @@ gcloud auth login
 gcloud config set project <YOUR_PROJECT_ID>
 ```
 
+- Warning: Avoid committing sensitive data to version control and ensure that any local .tfvars or configuration files with credentials are added to .gitignore if they are used for local testing. Storing these files securely outside of your repository will reduce the risk of unauthorized access.
+
+
 ### 3. Initialize Terraform
 In the root directory of the project, run:
 
